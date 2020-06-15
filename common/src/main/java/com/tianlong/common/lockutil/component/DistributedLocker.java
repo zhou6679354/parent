@@ -1,6 +1,6 @@
 package com.tianlong.common.lockutil.component;
 
-import com.tianlong.common.lockutil.exception.UnableToAquireLockException;
+import com.tianlong.common.exception.UnableToAquireLockException;
 
 public interface DistributedLocker {
     /**

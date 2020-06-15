@@ -1,6 +1,6 @@
 package com.tianlong.common.lockutil.component;
 
-import com.tianlong.common.lockutil.exception.UnableToAquireLockException;
+import com.tianlong.common.exception.UnableToAquireLockException;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
