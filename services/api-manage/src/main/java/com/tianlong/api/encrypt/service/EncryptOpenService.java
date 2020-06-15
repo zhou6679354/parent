@@ -8,11 +8,14 @@ import com.tianlong.api.encrypt.domain.RSAResponse;
 public interface EncryptOpenService {
     /**
      * 生成RSA公私钥
-     *  @return
-      */
+     *
+     * @return
+     */
     RSAResponse getRSA();
+
     /**
-     *获得加解密用的密钥
+     * 获得加解密用的密钥
+     *
      * @param request
      * @return
      */

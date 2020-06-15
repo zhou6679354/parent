@@ -5,26 +5,32 @@ package com.tianlong.api.encrypt.domain;
  */
 public class KeyResponse {
     /**
-     *整个系统所有加密算法共用的密钥
+     * 整个系统所有加密算法共用的密钥
      */
     private String key;
-        public static class Builder{
-            private String key;
-            public Builder setKey(String key){
-                this.key = key;
-                return this;
-            }
-            public KeyResponse build(){
-                return new KeyResponse(this);
-            }
+
+    public static class Builder {
+        private String key;
+
+        public Builder setKey(String key) {
+            this.key = key;
+            return this;
         }
-        public static Builder options(){
-            return new Builder();
+
+        public KeyResponse build() {
+            return new KeyResponse(this);
         }
-        private KeyResponse(Builder builder){
-            this.key = builder .key;
-        }
-        public String getKey() {
-            return key;
-        }
+    }
+
+    public static Builder options() {
+        return new Builder();
+    }
+
+    private KeyResponse(Builder builder) {
+        this.key = builder.key;
+    }
+
+    public String getKey() {
+        return key;
+    }
 }

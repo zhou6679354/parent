@@ -15,16 +15,18 @@ public class EncryptOpenServiceImpl implements EncryptOpenService {
     private String privateKey;
     @Value("${api.encrypt.key}")
     private String key;
+
     @Override
     public RSAResponse getRSA() {
         RSAResponse response = RSAResponse.options().setServerPublicKey(publicKey).build();
         return response;
     }
+
     @Override
-    public KeyResponse getKey(KeyRequest request)throws Exception {
+    public KeyResponse getKey(KeyRequest request) throws Exception {
         String clientPublicKey = RSAUtils.privateDecrypt(request.getClientEncryptPublicKey(), RSAUtils.getPrivateKey(privateKey));
-        String encryptKey = RSAUtils.publicEncrypt(key,RSAUtils.getPublicKey(clientPublicKey));
-        KeyResponse response = KeyResponse.options().setKey(encryptKey) .build();
+        String encryptKey = RSAUtils.publicEncrypt(key, RSAUtils.getPublicKey(clientPublicKey));
+        KeyResponse response = KeyResponse.options().setKey(encryptKey).build();
         return response;
     }
 }
