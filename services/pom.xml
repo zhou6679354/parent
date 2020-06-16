@@ -21,6 +21,8 @@
         <module>user-manage</module>
         <module>api-manage</module>
         <module>web-manage</module>
+        <module>integral-manage</module>
+        <module>warehouse-manage</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
