@@ -20,6 +20,7 @@
         <module>stock-manage</module>
         <module>user-manage</module>
         <module>api-manage</module>
+        <module>web-manage</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
