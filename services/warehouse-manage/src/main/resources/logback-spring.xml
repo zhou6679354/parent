@@ -56,7 +56,7 @@
     </appender>
 
 
-    <logger name="com.tianlong.user" level="WARN" additivity="false">
+    <logger name="com.tianlong.warehouse" level="WARN" additivity="false">
         <appender-ref ref="access_log"/>
     </logger>
 

@@ -3,15 +3,18 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/services/api-manage/api-manage.iml" filepath="$PROJECT_DIR$/services/api-manage/api-manage.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/basic-manage/basic.iml" filepath="$PROJECT_DIR$/services/basic-manage/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/basic-manage/basic-manage.iml" filepath="$PROJECT_DIR$/services/basic-manage/basic-manage.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/order-manage/order.iml" filepath="$PROJECT_DIR$/services/order-manage/order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/integral-manage/integral-manage.iml" filepath="$PROJECT_DIR$/services/integral-manage/integral-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/order-manage/order-manage.iml" filepath="$PROJECT_DIR$/services/order-manage/order-manage.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/stock-manage/stock.iml" filepath="$PROJECT_DIR$/services/stock-manage/stock.iml" />
-      <module fileurl="file://$PROJECT_DIR$/services/user-manage/user.iml" filepath="$PROJECT_DIR$/services/user-manage/user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/stock-manage/stock-manage.iml" filepath="$PROJECT_DIR$/services/stock-manage/stock-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/user-manage/user-manage.iml" filepath="$PROJECT_DIR$/services/user-manage/user-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/warehouse-manage/warehouse-manage.iml" filepath="$PROJECT_DIR$/services/warehouse-manage/warehouse-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/web-manage/web-manage.iml" filepath="$PROJECT_DIR$/services/web-manage/web-manage.iml" />
     </modules>
   </component>
 </project>

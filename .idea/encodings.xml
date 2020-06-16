@@ -6,9 +6,12 @@
     <file url="file://$PROJECT_DIR$/server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/api-manage/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/basic-manage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/services/integral-manage/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/order-manage/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/stock-manage/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/user-manage/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/user-manage/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/services/warehouse-manage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/services/web-manage/src/main/java" charset="UTF-8" />
   </component>
 </project>
