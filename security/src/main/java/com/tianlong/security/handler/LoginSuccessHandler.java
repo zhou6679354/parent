@@ -1,13 +1,14 @@
 package com.tianlong.security.handler;
 
 import com.alibaba.fastjson.JSON;
-import com.tianlong.gateway.security.constant.ResultCode;
-import com.tianlong.gateway.security.entity.RoleInfo;
-import com.tianlong.gateway.security.model.AuthUserDetails;
-import com.tianlong.gateway.security.service.IRoleInfoService;
-import com.tianlong.gateway.security.utils.ResUtil;
-import com.tianlong.gateway.security.utils.ResponseUtil;
-import com.tianlong.gateway.security.utils.TokenUtil;
+
+import com.tianlong.common.constant.ResultCode;
+import com.tianlong.common.model.user.RoleInfo;
+import com.tianlong.common.util.ResUtil;
+import com.tianlong.common.util.ResponseUtil;
+import com.tianlong.security.model.AuthUserDetails;
+import com.tianlong.security.service.IRoleInfoService;
+import com.tianlong.security.utils.TokenUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;

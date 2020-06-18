@@ -1,9 +1,10 @@
 package com.tianlong.security.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.tianlong.gateway.security.entity.MapRolePermission;
-import com.tianlong.gateway.security.mapper.MapRolePermissionMapper;
-import com.tianlong.gateway.security.service.IMapRolePermissionService;
+
+import com.tianlong.security.entity.MapRolePermission;
+import com.tianlong.security.mapper.MapRolePermissionMapper;
+import com.tianlong.security.service.IMapRolePermissionService;
 import org.springframework.stereotype.Service;
 
 /**

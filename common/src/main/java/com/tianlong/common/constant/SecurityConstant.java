@@ -1,4 +1,4 @@
-package com.tianlong.security.constant;
+package com.tianlong.common.constant;
 /**
  * @ClassName SecurityConstant
  * @Description 安全参数常量

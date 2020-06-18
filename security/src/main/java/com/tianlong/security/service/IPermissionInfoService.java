@@ -1,7 +1,7 @@
 package com.tianlong.security.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.tianlong.gateway.security.entity.PermissionInfo;
+import com.tianlong.common.model.user.PermissionInfo;
 
 /**
  *  服务类接口

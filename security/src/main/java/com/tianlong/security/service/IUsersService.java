@@ -1,8 +1,9 @@
 package com.tianlong.security.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.tianlong.gateway.security.entity.Users;
-import com.tianlong.gateway.security.model.AuthUserModel;
+
+import com.tianlong.common.model.user.AuthUserModel;
+import com.tianlong.common.model.user.Users;
 import org.springframework.stereotype.Service;
 
 /**

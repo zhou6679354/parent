@@ -1,4 +1,4 @@
-package com.tianlong.security.entity;
+package com.tianlong.common.model.user;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.fasterxml.jackson.annotation.JsonFormat;

@@ -1,8 +1,9 @@
 package com.tianlong.security.handler;
 
-import com.tianlong.gateway.security.constant.ResultCode;
-import com.tianlong.gateway.security.utils.ResUtil;
-import com.tianlong.gateway.security.utils.ResponseUtil;
+
+import com.tianlong.common.constant.ResultCode;
+import com.tianlong.common.util.ResUtil;
+import com.tianlong.common.util.ResponseUtil;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;

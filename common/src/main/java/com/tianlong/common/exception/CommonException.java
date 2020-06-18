@@ -1,4 +1,4 @@
-package com.tianlong.security.exception;
+package com.tianlong.common.exception;
 /**
  * 通用异常处理类
  */

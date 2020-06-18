@@ -1,4 +1,4 @@
-package com.tianlong.security.constant;
+package com.tianlong.common.constant;
 /**
  * @ClassName UserConstant
  * @Description 用户常量

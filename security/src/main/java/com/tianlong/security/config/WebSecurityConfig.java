@@ -1,13 +1,13 @@
 package com.tianlong.security.config;
 
-import com.tianlong.gateway.security.constant.IgnoredUrlsProperties;
-import com.tianlong.gateway.security.filter.JWTAuthenticationFilter;
-import com.tianlong.gateway.security.filter.MyFilterSecurityInterceptor;
-import com.tianlong.gateway.security.filter.MyUsernamePasswordAuthenticationFilter;
-import com.tianlong.gateway.security.filter.WebSecurityCorsFilter;
-import com.tianlong.gateway.security.handler.EntryPointUnauthorizedHandler;
-import com.tianlong.gateway.security.handler.RestAccessDeniedHandler;
-import com.tianlong.gateway.security.service.impl.UserDetailsServiceImpl;
+
+import com.tianlong.security.constant.IgnoredUrlsProperties;
+import com.tianlong.security.filter.MyFilterSecurityInterceptor;
+import com.tianlong.security.filter.MyUsernamePasswordAuthenticationFilter;
+import com.tianlong.security.filter.WebSecurityCorsFilter;
+import com.tianlong.security.handler.EntryPointUnauthorizedHandler;
+import com.tianlong.security.handler.RestAccessDeniedHandler;
+import com.tianlong.security.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -80,15 +80,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
         myUsernamePasswordAuthenticationFilter.setAuthenticationManager(authenticationManager);//设置登入处理方式
         myUsernamePasswordAuthenticationFilter.setAuthenticationSuccessHandler(successHandler);//设置登陆成功处理
         myUsernamePasswordAuthenticationFilter.setAuthenticationFailureHandler(failHandler); //设置登入失败处理
-        JWTAuthenticationFilter jwtAuthenticationFilter=new JWTAuthenticationFilter(authenticationManager);
         ExpressionUrlAuthorizationConfigurer<HttpSecurity>.ExpressionInterceptUrlRegistry registry = http.authorizeRequests();
         //除配置文件忽略路径其它所有请求都需经过认证和授权
         for(String url:ignoredUrlsProperties.getUrls()){
             registry.antMatchers(url).permitAll();
         }
 
-        //添加jtw鉴权过滤器
-        http.addFilterAt(jwtAuthenticationFilter,UsernamePasswordAuthenticationFilter.class)
+        //添加自定义鉴权过滤器
+        http.addFilterAt(myUsernamePasswordAuthenticationFilter,UsernamePasswordAuthenticationFilter.class)
                 .addFilterAt(myFilterSecurityInterceptor, FilterSecurityInterceptor.class)
                 //添加自定义权限过滤器
                 .addFilterBefore(new WebSecurityCorsFilter(), ChannelProcessingFilter.class)

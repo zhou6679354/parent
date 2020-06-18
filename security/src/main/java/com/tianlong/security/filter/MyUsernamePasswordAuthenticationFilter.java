@@ -25,13 +25,13 @@ import java.nio.charset.Charset;
 public class MyUsernamePasswordAuthenticationFilter extends AbstractAuthenticationProcessingFilter{
     public MyUsernamePasswordAuthenticationFilter() {
         //指定登陆路径
-        super(new AntPathRequestMatcher("/v1/login", "POST"));
+        super(new AntPathRequestMatcher("/gateway/login", "POST"));
     }
 
 
 
     @Override
-    public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException, IOException, ServletException {
+    public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException, IOException {
         //从json中获取username和password
         String body = StreamUtils.copyToString(request.getInputStream(), Charset.forName("UTF-8"));
         String username = null, password = null;
@@ -54,15 +54,9 @@ public class MyUsernamePasswordAuthenticationFilter extends AbstractAuthenticati
         username = username.trim();
 
         //封装到security提供的用户认证接口中
-
-        UsernamePasswordAuthenticationToken authRequest = new UsernamePasswordAuthenticationToken(
-
-                username, password);
-
+        UsernamePasswordAuthenticationToken authRequest = new UsernamePasswordAuthenticationToken(username, password);
         /*将登陆请求提交给认证 AuthenticationManager管理模块 下的authenticate方法 再由authenticate具体的实现类完成认证服务
-
         使用默认提供的DaoAuthenticationProvider 这个用户信息查询及存储实现类  */
-
         return this.getAuthenticationManager().authenticate(authRequest);
 
     }

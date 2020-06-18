@@ -1,4 +1,4 @@
-package com.tianlong.security.constant;
+package com.tianlong.common.constant;
 
 /**
  * HTTP状态码

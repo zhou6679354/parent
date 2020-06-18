@@ -1,4 +1,4 @@
-package com.tianlong.security.utils;
+package com.tianlong.common.util;
 
 import com.alibaba.fastjson.JSONObject;
 

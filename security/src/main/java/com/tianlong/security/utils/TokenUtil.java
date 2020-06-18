@@ -1,10 +1,11 @@
 package com.tianlong.security.utils;
 
 import com.alibaba.fastjson.JSON;
-import com.tianlong.gateway.security.constant.SecurityConstant;
-import com.tianlong.gateway.security.entity.RoleInfo;
-import com.tianlong.gateway.security.model.AuthUserDetails;
-import com.tianlong.gateway.security.model.Scopes;
+
+import com.tianlong.common.constant.SecurityConstant;
+import com.tianlong.common.model.user.RoleInfo;
+import com.tianlong.security.model.AuthUserDetails;
+import com.tianlong.common.enums.Scopes;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

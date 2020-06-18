@@ -1,4 +1,4 @@
-package com.tianlong.security.entity;
+package com.tianlong.common.model.user;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;

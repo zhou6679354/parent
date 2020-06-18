@@ -2,9 +2,10 @@ package com.tianlong.security.service.impl;
 
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.tianlong.gateway.security.entity.PermissionInfo;
-import com.tianlong.gateway.security.mapper.PermissionInfoMapper;
-import com.tianlong.gateway.security.service.IPermissionInfoService;
+
+import com.tianlong.common.model.user.PermissionInfo;
+import com.tianlong.security.mapper.PermissionInfoMapper;
+import com.tianlong.security.service.IPermissionInfoService;
 import org.springframework.stereotype.Service;
 
 

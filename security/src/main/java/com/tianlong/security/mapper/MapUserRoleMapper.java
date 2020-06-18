@@ -1,7 +1,7 @@
 package com.tianlong.security.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tianlong.gateway.security.entity.MapUserRole;
+import com.tianlong.security.entity.MapUserRole;
 
 /**
  *  Mapper 用户角色信息接口

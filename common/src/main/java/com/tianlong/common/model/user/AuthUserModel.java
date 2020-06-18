@@ -1,8 +1,8 @@
-package com.tianlong.security.model;
+package com.tianlong.common.model.user;
 
-import com.tianlong.gateway.security.entity.PermissionInfo;
-import com.tianlong.gateway.security.entity.RoleInfo;
 
+
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -12,7 +12,7 @@ import java.util.List;
  * @Date 2020/6/16 14:26
  * @Version 1.0
  **/
-public class AuthUserModel {
+public class AuthUserModel implements Serializable {
     private String username;
     private String password;
     private String status;

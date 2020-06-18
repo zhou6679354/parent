@@ -1,6 +1,6 @@
 package com.tianlong.security.filter;
 
-import com.tianlong.gateway.security.manager.MyAccessDecisionManager;
+import com.tianlong.security.manager.MyAccessDecisionManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.SecurityMetadataSource;
 import org.springframework.security.access.intercept.AbstractSecurityInterceptor;
@@ -9,6 +9,7 @@ import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.*;
 import java.io.IOException;
 
 /**

@@ -1,7 +1,8 @@
 package com.tianlong.security.model;
 
-import com.tianlong.gateway.security.constant.UserConstant;
-import com.tianlong.gateway.security.entity.PermissionInfo;
+import com.tianlong.common.constant.UserConstant;
+import com.tianlong.common.model.user.AuthUserModel;
+import com.tianlong.common.model.user.PermissionInfo;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -16,7 +17,7 @@ import java.util.List;
  * @Date 2020/6/16 14:26
  * @Version 1.0
  **/
-public class AuthUserDetails extends AuthUserModel implements UserDetails {
+public class AuthUserDetails extends AuthUserModel implements UserDetails{
     private static final long serialVersionUID = 1L;
 
     public AuthUserDetails(AuthUserModel user) {

@@ -1,4 +1,4 @@
-package com.tianlong.security.model;
+package com.tianlong.common.enums;
 
 public enum Scopes {
     REFRESH_TOKEN;

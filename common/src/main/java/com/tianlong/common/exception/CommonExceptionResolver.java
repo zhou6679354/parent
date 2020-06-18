@@ -1,7 +1,8 @@
-package com.tianlong.security.exception;
+package com.tianlong.common.exception;
 
-import com.tianlong.gateway.security.constant.GlobalCons;
-import com.tianlong.gateway.security.constant.ResultCode;
+
+import com.tianlong.common.constant.GlobalCons;
+import com.tianlong.common.constant.ResultCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.HandlerExceptionResolver;

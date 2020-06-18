@@ -1,4 +1,4 @@
-package com.tianlong.security.entity;
+package com.tianlong.common.model.user;
 
 import java.io.Serializable;
 

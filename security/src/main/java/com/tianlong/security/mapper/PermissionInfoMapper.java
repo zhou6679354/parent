@@ -2,7 +2,7 @@ package com.tianlong.security.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tianlong.gateway.security.entity.PermissionInfo;
+import com.tianlong.common.model.user.PermissionInfo;
 
 
 /**

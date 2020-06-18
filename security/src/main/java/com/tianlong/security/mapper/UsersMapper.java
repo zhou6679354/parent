@@ -2,8 +2,8 @@ package com.tianlong.security.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.tianlong.gateway.security.entity.Users;
-import com.tianlong.gateway.security.model.AuthUserModel;
+import com.tianlong.common.model.user.AuthUserModel;
+import com.tianlong.common.model.user.Users;
 import org.apache.ibatis.annotations.Param;
 
 

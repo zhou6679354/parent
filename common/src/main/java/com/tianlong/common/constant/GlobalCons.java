@@ -1,4 +1,4 @@
-package com.tianlong.security.constant;
+package com.tianlong.common.constant;
 
 public class GlobalCons {
     // 返回变量
