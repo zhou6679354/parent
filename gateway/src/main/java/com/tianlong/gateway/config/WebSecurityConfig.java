@@ -8,7 +8,7 @@ import com.tianlong.gateway.filter.MyUsernamePasswordAuthenticationFilter;
 import com.tianlong.gateway.filter.WebSecurityCorsFilter;
 import com.tianlong.gateway.handler.EntryPointUnauthorizedHandler;
 import com.tianlong.gateway.handler.RestAccessDeniedHandler;
-import com.tianlong.gateway.service.impl.UserDetailsServiceImpl;
+import com.tianlong.gateway.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

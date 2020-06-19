@@ -1,4 +1,4 @@
-package com.tianlong.gateway.mapper;
+package com.tianlong.user.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

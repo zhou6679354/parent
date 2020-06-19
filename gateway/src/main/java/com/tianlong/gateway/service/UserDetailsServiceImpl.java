@@ -1,9 +1,8 @@
-package com.tianlong.gateway.service.impl;
+package com.tianlong.gateway.service;
 
 
 import com.tianlong.common.model.user.AuthUserModel;
 import com.tianlong.gateway.model.AuthUserDetails;
-import com.tianlong.gateway.service.IUsersService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

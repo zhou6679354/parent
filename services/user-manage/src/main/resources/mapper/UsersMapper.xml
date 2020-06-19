@@ -4,7 +4,7 @@
 
 <mapper namespace="com.tianlong.gateway.security.mapper.UsersMapper">
 
-    <resultMap id="AuthUserModel" type="com.tianlong.gateway.security.model.AuthUserModel">
+    <resultMap id="AuthUserModel" type="com.tianlong.common.model.user.AuthUserModel">
 
         <id column="id" jdbcType="VARCHAR" property="userId"/>
 
@@ -18,15 +18,15 @@
 
         <collection property="roleInfos" column="id" javaType="ArrayList"
 
-                    ofType="com.tianlong.gateway.security.entity.RoleInfo" select="getRolesByUserId"/>
+                    ofType="com.tianlong.common.model.user.RoleInfo" select="getRolesByUserId"/>
 
         <collection property="permissionInfos" column="id" javaType="ArrayList"
 
-                    ofType="com.tianlong.gateway.security.entity.PermissionInfo" select="getPermissionsByUserId"/>
+                    ofType="com.tianlong.common.model.user.PermissionInfo" select="getPermissionsByUserId"/>
 
     </resultMap>
 
-    <select id="getRolesByUserId" resultType="com.tianlong.gateway.security.entity.RoleInfo">
+    <select id="getRolesByUserId" resultType="com.tianlong.common.model.user.RoleInfo">
 
     SELECT
 
@@ -48,7 +48,7 @@
 
 
 
-    <select id="getPermissionsByUserId" resultType="com.tianlong.gateway.security.entity.PermissionInfo">
+    <select id="getPermissionsByUserId" resultType="com.tianlong.common.model.user.PermissionInfo">
 
     SELECT
 

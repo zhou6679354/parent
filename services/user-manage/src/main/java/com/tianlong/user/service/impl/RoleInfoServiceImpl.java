@@ -1,11 +1,11 @@
-package com.tianlong.gateway.service.impl;
+package com.tianlong.user.service.impl;
 
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-
 import com.tianlong.common.model.user.RoleInfo;
-import com.tianlong.gateway.mapper.RoleInfoMapper;
-import com.tianlong.gateway.service.IRoleInfoService;
+
+import com.tianlong.user.mapper.RoleInfoMapper;
+import com.tianlong.user.service.IRoleInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

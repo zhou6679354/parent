@@ -1,7 +1,7 @@
 package com.tianlong.gateway.manager;
 
 
-import com.tianlong.security.model.MyGrantedAuthority;
+import com.tianlong.gateway.model.MyGrantedAuthority;
 import org.springframework.security.access.AccessDecisionManager;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.ConfigAttribute;

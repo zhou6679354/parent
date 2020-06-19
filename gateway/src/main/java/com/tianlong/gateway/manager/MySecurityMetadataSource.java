@@ -3,7 +3,6 @@ package com.tianlong.gateway.manager;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.tianlong.common.model.user.PermissionInfo;
 import com.tianlong.gateway.service.IPermissionInfoService;
 import org.apache.commons.lang.StringUtils;
@@ -32,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 public class MySecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
 
     @Autowired
-    private IPermissionInfoService findRoleInfoAndPermission;
+    private IPermissionInfoService permissionInfoService;
 
     @Autowired
     private StringRedisTemplate redisTemplate;
@@ -54,9 +53,7 @@ public class MySecurityMetadataSource implements FilterInvocationSecurityMetadat
         //从reids中获取角色与权限数据
         String redisConfigAttributesPermission=redisTemplate.opsForValue().get("configAttributes:permissions");
         if(StringUtils.isBlank(redisConfigAttributesPermission)){
-            QueryWrapper<PermissionInfo> permissionInfoQueryWrapper=new QueryWrapper<>();
-            permissionInfoQueryWrapper.lambda().eq(PermissionInfo::getStatus,"enable");
-            List<PermissionInfo> permissionInfos=findRoleInfoAndPermission.list(permissionInfoQueryWrapper);
+            List<PermissionInfo> permissionInfos=permissionInfoService.findPermissionInfo();
             for (PermissionInfo permissionInfo:permissionInfos) {
                 ConfigAttribute configAttribute=new SecurityConfig(permissionInfo.getPath()+" "+permissionInfo.getMethod());
                 configAttributes.add(configAttribute);

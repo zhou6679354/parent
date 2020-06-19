@@ -1,5 +1,6 @@
-package com.tianlong.gateway.service;
+package com.tianlong.user.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.tianlong.common.model.user.AuthUserModel;
 import com.tianlong.common.model.user.Users;
 import org.springframework.stereotype.Service;
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @since 2020-06-16
  */
 @Service
-public interface IUsersService {
+public interface IUsersService extends IService<Users> {
     /**
      * @return AuthUserModel
      * @Author zhouwenheng
