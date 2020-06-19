@@ -19,7 +19,6 @@
         <module>common</module>
         <module>gateway</module>
         <module>services</module>
-        <module>security</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
