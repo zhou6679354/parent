@@ -28,7 +28,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private StringRedisTemplate redisTemplate;
 
     @Autowired
-    private IUsersService iUsersService;
+    private IUsersService usersService;
 
     /**
      * @Author liuheming
@@ -47,7 +47,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         }
 
         //查询用户信息
-        AuthUserModel authUserPoJo=iUsersService.findAuthUserByUsername(username);
+        AuthUserModel authUserPoJo=usersService.findAuthUserByUsername(username);
         if(null==authUserPoJo){
             throw new UsernameNotFoundException("当前用户不存在");
         }

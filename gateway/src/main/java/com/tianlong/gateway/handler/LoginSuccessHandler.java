@@ -7,7 +7,7 @@ import com.tianlong.common.util.ResUtil;
 import com.tianlong.common.util.ResponseUtil;
 
 import com.tianlong.gateway.model.AuthUserDetails;
-import com.tianlong.gateway.service.IRoleInfoService;
+import com.tianlong.gateway.service.IUsersService;
 import com.tianlong.gateway.utils.TokenUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +42,7 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
     private StringRedisTemplate redisTemplate;
 
     @Autowired
-    private IRoleInfoService roleInfoService;
+    private IUsersService usersService;
     /**
      * @Author zhouwenheng
      * @Description 用户认证成功后 生成token并返回
@@ -64,7 +64,7 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
         String roleInfosMapPermission=redisTemplate.opsForValue().get("authentication:roleinfos:permissions");
         if(StringUtils.isBlank(roleInfosMapPermission)){
             //将角色与权限关系存入redis
-            List<RoleInfo> roleInfos=roleInfoService.findRoleInfoAndPermission();
+            List<RoleInfo> roleInfos=usersService.findRoleInfoAndPermission();
             redisTemplate.opsForValue().set("authentication:roleinfos:permissions", JSON.toJSONString(roleInfos),480,TimeUnit.MINUTES);
         }
 
